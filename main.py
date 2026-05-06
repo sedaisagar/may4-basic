@@ -1,0 +1,21 @@
+# first_name =  "Sagar" # snake case
+# last_name = "Sedai" # snake case
+
+# print(first_name)
+# print(last_name)
+
+# full_name = input("Enter your full name: ")
+
+# print(full_name)
+
+# import package_1.printer
+from package_1 import printer
+
+
+# venv/Scripts/activate -> Windows 
+
+
+
+
+
+# source venv/bin/activate -> Linux/MacOS
