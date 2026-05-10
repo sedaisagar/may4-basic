@@ -136,6 +136,109 @@ country = str('Nepal')
 
 
 
+# List [], Tuple (), Set {}, Dictionary {}
 
 
 
+
+students_tuple = ('Ram', 'Shyam', 'Rita', 'Hari') # () or tuple()
+students_set = {'Ram', 'Shyam', 'Rita', 'Hari'} # {} or set()
+student = {
+    "name" : "Ram",
+    "age": 12,
+    "address": "Mid Baneshwor",
+    "parent_name" : "Dasarath",
+}
+
+
+students_list = ['Ram', 'Shyam', 'Rita', 'Hari'] # [] or list()
+# Inserting items to list
+students_list.append("Aagaman")
+students_list.append("Sunita")
+
+# Removing items to list
+students_list.pop(0)
+students_list.remove("Sunita")
+
+# Loops in python
+
+# for , while
+
+# for value in students_list:
+#     print(value)
+
+
+# for index, value in enumerate(students_list):
+#     print(index, value)
+
+
+# for i in range(99):
+#     print(f"Printing for {i}")
+
+
+# write a program to
+# scan 5 students name from terminal, insert the names into list and display them
+
+
+"""
+students = []
+
+for i in range(5):
+
+    name = input("Enter name of student \n")
+
+    students.append(name)
+
+print(students)
+"""
+
+
+# roll_numbers = {0,0,1,1,2,2,2,3,3,3,3,4,5,6,7}
+
+# breakpoint()
+# print(roll_numbers)
+
+
+
+# write a program to
+# scan 10 students name from terminal, add the names into set and display them
+
+
+
+# students = []
+
+# for i in range(10): students.append(input("Enter name \n"))
+
+# print(students)
+
+# breakpoint()
+
+
+
+
+student = {
+    "name" : "Ram",
+    "age": 12,
+    "address": "Mid Baneshwor",
+    "parent_name" : "Dasarath",
+}
+student.keys()
+student.values()
+student.items() 
+student.update(new_key='NEW VALUE')
+student['new_key_1'] = 'New Value 1'
+
+# # (Pdb) student   
+# {'name': 'Ram', 'age': 12, 'address': 'Mid Baneshwor', 'parent_name': 'Dasarath'}
+# # (Pdb) student.keys()
+# dict_keys(['name', 'age', 'address', 'parent_name'])
+# # (Pdb) student.values()
+# dict_values(['Ram', 12, 'Mid Baneshwor', 'Dasarath'])
+# # (Pdb) student.items() 
+# dict_items([('name', 'Ram'), ('age', 12), ('address', 'Mid Baneshwor'), ('parent_name', 'Dasarath')])
+# # (Pdb) student.update(new_key='NEW VALUE')
+# # (Pdb) student.items()
+# dict_items([('name', 'Ram'), ('age', 12), ('address', 'Mid Baneshwor'), ('parent_name', 'Dasarath'), ('new_key', 'NEW VALUE')])
+# # (Pdb) student['new_key_1'] = 'New Value 1'
+# # (Pdb) student.items()
+# dict_items([('name', 'Ram'), ('age', 12), ('address', 'Mid Baneshwor'), ('parent_name', 'Dasarath'), ('new_key', 'NEW VALUE'), ('new_key_1', 'New Value 1')])
