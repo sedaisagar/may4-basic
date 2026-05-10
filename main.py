@@ -9,13 +9,11 @@
 # print(full_name)
 
 # import package_1.printer
-from package_1 import printer
-
+# from package_1 import printer
 
 # venv/Scripts/activate -> Windows 
 
-
-
-
-
 # source venv/bin/activate -> Linux/MacOS
+
+
+import package_1.data_types
