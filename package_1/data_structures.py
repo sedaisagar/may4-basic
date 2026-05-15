@@ -155,32 +155,150 @@
 # 3. Map the whole dict in string like "Watch - Wearable - 500" 
 
 
+# products = [
+#     {
+#         "name": input("Enter name of product \t"),
+#         "category": input("Enter product category \t"),
+#         "price": float(input("Enter product price \t")),
+#         "stock_qty": int(input("Enter stock quantity \t")),
+#     } for _ in range(5)
+# ]
+
+# print("="*50)
+
+# filtered_products = list(filter(lambda x : x["stock_qty"] > 0 , products))
+
+# sorted_first  = sorted(products, key=lambda x: x["price"], reverse=True)
+
+# sorted_second  = sorted(products, key=lambda x: x["name"], reverse=False)
+
+# mapped_products = list(map(lambda x: f"{x["name"]} - {x["category"]} - {x["price"]}", products))
+
+# print(filtered_products)
+# print("="*50)
+# print(sorted_first)
+# print("="*50)
+# print(sorted_second)
+# print("="*50)
+# print(mapped_products)
+# print("="*50)
+
+# List Comprehension
 
 
-products = [
-    {
-        "name": input("Enter name of product \t"),
-        "category": input("Enter product category \t"),
-        "price": float(input("Enter product price \t")),
-        "stock_qty": int(input("Enter stock quantity \t")),
-    } for _ in range(5)
-]
 
-print("="*50)
+# items = [{"name":f"Product #{i}"} for i in range(5)]
 
-filtered_products = list(filter(lambda x : x["stock_qty"] > 0 , products))
+# print(items)
 
-sorted_first  = sorted(products, key=lambda x: x["price"], reverse=True)
 
-sorted_second  = sorted(products, key=lambda x: x["name"], reverse=False)
+# Objective: TUPLE , SET
+# ("name", "category", "price") # Tuple
 
-mapped_products = list(map(lambda x: f"{x["name"]} - {x["category"]} - {x["price"]}", products))
+# product = ("Watch", "Wearable", 500) 
 
-print(filtered_products)
-print("="*50)
-print(sorted_first)
-print("="*50)
-print(sorted_second)
-print("="*50)
-print(mapped_products)
-print("="*50)
+# i1,i2,i3 = product # Tuple Unpacking
+
+# # Accessing tuple elements
+# # print(product[0]) # Watch
+# # print(product[1]) # Watch
+# # print(product[2]) # Watch
+# print(i1) # Watch
+# print(i2) # Watch
+# print(i3) # Watch
+
+# print(product)
+# # ("name","category", "price", "qty") # Tuple
+# product = (*product,*product, *product, 10)
+
+# print(product)
+
+# # Tuple any item count
+# wc = product.count("Watch")
+# qc = product.count(10)
+
+# print(f"Watch count : {wc} \t '10' count : {qc}")
+
+# wi = product.index("Wearable",5) 
+# print(f"Wearable index : {wi}")
+# Tupe Unpacking
+
+
+# Set in python
+
+numbers = {0,1,2,3,4,5,6,7,8,9}
+
+# 
+even_numbers = {i for i in numbers if i % 2 == 0}
+odd_numbers = {i for i in numbers if i % 2 != 0}
+
+even_numbers.remove(0)
+odd_numbers.add(0)
+
+union = even_numbers.union(odd_numbers)
+intersection = even_numbers.intersection(odd_numbers)
+difference = even_numbers.difference(odd_numbers)
+
+print("Even numbers : ", even_numbers)
+print("Odd numbers : ", odd_numbers)
+print("Union : ", union)
+print("Intersection : ", intersection)
+print("Difference : ", difference)
+
+
+fs = frozenset(odd_numbers)
+
+print(fs)
+
+# Write a python program 
+
+"""
+A city food delivery company stores every order as a tuple of 
+(restaurant_name, area, delivery_time, order_amount)
+
+where 
+Restaurant= restaurant_name, Area = area of delivery, 
+Delivery_time = time taken to deliver the order in minutes, 
+Order_amount = total amount of the order in rupees
+
+Set
+1. Make a set of all restaurant names
+2. Make a set of all areas of delivery
+3. Make a set of all delivery times
+3. Find the average delivery time of all orders
+
+Tuple 
+1. Which order represents the most expensive order?
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
