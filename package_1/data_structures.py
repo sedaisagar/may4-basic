@@ -195,32 +195,32 @@
 # Objective: TUPLE , SET
 # ("name", "category", "price") # Tuple
 
-# product = ("Watch", "Wearable", 500) 
+product = ("Watch", "Wearable", 500) 
 
-# i1,i2,i3 = product # Tuple Unpacking
+i1,i2,i3 = product # Tuple Unpacking
 
-# # Accessing tuple elements
-# # print(product[0]) # Watch
-# # print(product[1]) # Watch
-# # print(product[2]) # Watch
-# print(i1) # Watch
-# print(i2) # Watch
-# print(i3) # Watch
+# Accessing tuple elements
+# print(product[0]) # Watch
+# print(product[1]) # Watch
+# print(product[2]) # Watch
+print(i1) # Watch
+print(i2) # Watch
+print(i3) # Watch
 
-# print(product)
-# # ("name","category", "price", "qty") # Tuple
-# product = (*product,*product, *product, 10)
+print(product)
+# ("name","category", "price", "qty") # Tuple
+product = (*product,*product, *product, 10)
 
-# print(product)
+print(product)
 
-# # Tuple any item count
-# wc = product.count("Watch")
-# qc = product.count(10)
+# Tuple any item count
+wc = product.count("Watch")
+qc = product.count(10)
 
-# print(f"Watch count : {wc} \t '10' count : {qc}")
+print(f"Watch count : {wc} \t '10' count : {qc}")
 
-# wi = product.index("Wearable",5) 
-# print(f"Wearable index : {wi}")
+wi = product.index("Wearable",5) 
+print(f"Wearable index : {wi}")
 # Tupe Unpacking
 
 
