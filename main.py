@@ -18,4 +18,7 @@
 
 # import package_1.data_types
 # import package_1.conditionals
-import package_1.data_structures
+# import package_1.data_structures
+# import package_1.functions
+# import package_1.file_ops
+import package_2.classes

@@ -1,0 +1,21 @@
+{
+    "name": "Sagar",
+    "age": 30,
+    "city": "Kathmandu",
+    "address": {
+        "street": "New Road",
+        "number": 123,
+        "extra": {
+            "landmark": "Near City Hall",
+            "postal_code": "44600",
+            "extra_info": {
+                "country": "Nepal",
+                "continent": "Asia",
+                "extra_info_2": {
+                    "timezone": "NPT",
+                    "currency": "NPR"
+                }
+            }
+        }
+    }
+}
