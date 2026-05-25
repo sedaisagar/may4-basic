@@ -100,10 +100,10 @@ class Child(Parent):
         """)
         super().display()
 
-child_instance = Child(name = "Sagar", height="6 feet", edu_degree = "Engineering",edu_marks = "74", hobby="Dev")
-child_instance.display()
-print(Child.__mro__)
-breakpoint()
+# child_instance = Child(name = "Sagar", height="6 feet", edu_degree = "Engineering",edu_marks = "74", hobby="Dev")
+# child_instance.display()
+# print(Child.__mro__)
+# breakpoint()
 
 # MRO : Method Resolution Order
 
@@ -114,3 +114,35 @@ breakpoint()
 # 3. Create a subclass SavingsAccount that inherits from BankAccount and add an attribute interest_rate. Implement a method to calculate interest. 
 # 4. Create another subclass CurrentAccount that inherits from BankAccount and add an attribute overdraft_limit. 
 # 4.1. Implement a method to check if the account is overdrawn.
+
+
+
+
+class CertificateGenerator:
+    def __init__(self, name, course):
+        self.name = name
+        self.course = course
+
+    def generate_certificate(self):
+        print(f"Certificate of Completion")
+        print(f"This is to certify that {self.name} has successfully completed the {self.course} course.")
+
+class PythonCertificateGenerator(CertificateGenerator):
+    course = "Python Programming"
+    
+    def __init__(self, name):
+        super().__init__(name, self.course)
+
+class WebProgramCertificateGenerator(CertificateGenerator):
+    course = "Web Programming"
+
+    def __init__(self, name):
+        super().__init__(name, self.course)
+
+
+python_cert = PythonCertificateGenerator("Sagar")
+python_cert.generate_certificate()
+
+print('-'*100)
+web_cert = WebProgramCertificateGenerator("Sagar")
+web_cert.generate_certificate()
