@@ -98,3 +98,11 @@ finally:
 
 # COMMIT; <- IF OK then commit the changes to the database
 # ROLLBACK; <- IF NOT OK then rollback the changes to the database
+
+
+
+# TASK WILL BE
+# 1. Create a database and a table
+# 2. Insert some records into the table
+# 3. Fetch all the records from the table and print them in a list of dictionaries format
+

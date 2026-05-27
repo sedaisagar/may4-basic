@@ -24,4 +24,5 @@
 # import package_2.classes
 # import package_2.gen_iter
 # import package_3.pandas_ana
-import package_3.db_sql
+# import package_3.db_sql
+import package_3.web_scrapper
