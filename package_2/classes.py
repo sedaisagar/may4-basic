@@ -140,9 +140,62 @@ class WebProgramCertificateGenerator(CertificateGenerator):
         super().__init__(name, self.course)
 
 
-python_cert = PythonCertificateGenerator("Sagar")
-python_cert.generate_certificate()
+# python_cert = PythonCertificateGenerator("Sagar")
+# python_cert.generate_certificate()
 
-print('-'*100)
-web_cert = WebProgramCertificateGenerator("Sagar")
-web_cert.generate_certificate()
+# print('-'*100)
+# web_cert = WebProgramCertificateGenerator("Sagar")
+# web_cert.generate_certificate()
+
+
+
+# Class Method (cls), Static Method (), Instance Method (self)
+
+
+class MathOperations:
+
+    @staticmethod
+    def adder(*args):
+        return sum(*args)
+    
+    @classmethod
+    def add(cls, a, b):
+        return cls.adder(a, b)
+    
+    # Instance Method
+    def addition(self, a, b):
+        return self.adder(a, b)
+    
+
+
+
+# Instance method
+
+instance = MathOperations() # Instantiation
+result = instance.addition(2, 3)
+
+
+cls_result = MathOperations.add(2, 3)
+
+static_result = MathOperations.adder(2, 3)
+
+
+
+# Abstract Class and Abstract Method
+
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+
+    @abstractmethod
+    def make_sound(self):
+        pass
+
+class Dog(Animal):
+    def make_sound(self):
+        return "Woof!"
+    
+class Cat(Animal):
+    def make_sound(self):
+        return "Meow!"
